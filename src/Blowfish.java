@@ -9,8 +9,9 @@ import java.util.Random;
 class Blowfish{
     byte[]skey=new byte[1000];
     String skeyString;
-    static byte[] raw;
     
+    static byte[] raw;
+
     String inputMessage,encryptedData,decryptedMessage;
     public Blowfish(){
 
