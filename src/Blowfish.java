@@ -12,6 +12,7 @@ class Blowfish{
     static byte[] raw;
     String inputMessage,encryptedData,decryptedMessage;
     public Blowfish(){
+
         try{
             generateSymmetricKey();
             inputMessage = JOptionPane.showInputDialog(null,"Enter message to encrypt");
@@ -28,6 +29,7 @@ class Blowfish{
         catch(Exception e){
             System.out.println(e);
         }
+
     }
     void generateSymmetricKey(){
         try{
@@ -72,4 +74,5 @@ class Blowfish{
     public static void main(String args[]){
         Blowfish bf=new Blowfish();
     }
+    
 }
